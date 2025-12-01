@@ -10,4 +10,4 @@ ARG COURSE="DOCKER" \
 RUN echo "$COURSE :$DURATION"
 ENV COURSE=${COURSE}
 USER rajiv
-CMD["sleep", "1000"]
+CMD ["sleep", "1000"]
