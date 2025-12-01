@@ -7,5 +7,7 @@ RUN pwd
 RUN useradd rajiv
 ARG COURSE="DOCKER" \
     DURATION="10HRS"
+RUN echo "$COURSE :$DURATION"
 ENV COURSE=${COURSE}
 USER rajiv
+CMD["sleep", "1000"]
